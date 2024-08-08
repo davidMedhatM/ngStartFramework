@@ -1,0 +1,18 @@
+.line{
+    height: 4px;
+    width: 40%;
+    background-color: black;
+}
+
+
+.tofloatinimg{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.397);
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.tohover:hover .tofloatinimg{
+    top: 0;
+}

@@ -1,0 +1,33 @@
+<div class="portfolio my-2">
+    <div class="container text-center">
+        <h2>portfolio component</h2>
+        <div class="bar w-25 d-flex justify-content-center mb-4 mx-auto">
+            <div class="line align-self-center"></div>
+            <i class="fa fa-star text-black px-2 "></i>
+            <div class="line align-self-center"></div>
+        </div>
+        @defer (on timer(3s)) {
+
+        <div class="row">
+            @for (product of productList; track product.pId) {
+            <div class="col-md-4">
+                <div class="position-relative tohover">
+                    <img [src]="product.pImg" alt="pImg" class="w-100">
+                    <div class="tofloatinimg"></div>
+                </div>
+            </div>
+            }
+
+        </div>
+        }
+        @loading(minimum 2s) {
+        <p>loooooooooooooooooooooooooooooooooding</p>
+        }
+        @placeholder(minimum 2s) {
+        <p>placeholder</p>
+        }
+        @error{
+        <p>eroorrrrrrrrrrrrrrrrrrrrrrrrr</p>
+        }
+    </div>
+</div>
